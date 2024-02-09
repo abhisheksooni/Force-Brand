@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: fixel;
+    src: url("Font/FixelText-Regular.woff2") format('truetype');
+  }
+@font-face {
+    font-family: fixelBlack;
+    src: url("Font/FixelText-Black.woff2") format('truetype');
+  }
+@font-face {
+    font-family: fixelBold;
+    src: url("Font/FixelText-Bold.woff2") format('truetype');
+  }
+@font-face {
+    font-family: fixelExBold;
+    src: url("Font/FixelText-ExtraBold.woff2") format('truetype');
+  }
+@font-face {
+    font-family: fixelMedium;
+    src: url("Font/FixelText-Medium.woff2") format('truetype');
+  }
+
+    
+  
+  
+  body{
+        font-family: fixel;
+    }
+    .fixelBlack{
+        font-family: fixelBlack;
+    }
+    .fixelBold{
+        font-family: fixelBold;
+    }
+    .fixelExBold{
+        font-family: fixelExBold;
+    }
+    .fixelMedium{
+        font-family: fixelMedium;
+    }
+
+ 
+
+    
