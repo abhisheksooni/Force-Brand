@@ -1,13 +1,16 @@
 import React from 'react'
 
 // import { ArrowUpRight } from 'lucide-react';
-import {ArrowBtn , ItemCard, Button} from '../Components/AllExports'
+import {ArrowBtn , ItemCard, Button,ReviewCars,DarkButton} from '../Components/AllExports'
 
 function Home() {
   return (
     <>
+    <section className=''>
+
+    
     {/* Home section-1 */}
-    <section className=' '>
+    <section className='px-5 xl:px-0'>
        <div className="flex gap-3 flex-col md:flex-row justify-center h-full   lg:h-[60vh]">
          {/* Boxs-1 */}
     <div className=" hidden md:inline-block ">
@@ -58,22 +61,73 @@ function Home() {
     </div>
        </div>
     </section>
-    {/* Home section-2 */}
-    <section className=''>   
+    {/* Home section-2 Items cards */}
+    <section className=' mx-auto max-w-[1150px] px-5 xl:px-0'> 
+      {/*Top Sales section  */}
 <div className="">
   <div className=" flex justify-between py-9">
-  <span className='fixelMedium text-3xl font-semibold'>Top Sale</span>
+  <span className='fixelMedium text-3xl font-semibold'>New Items</span>
 <Button/>
   </div>
 
  {/* New Items */}
-  <div className="flex gap-4 overflow-x-scroll">
+  <div className="flex  xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
+<ItemCard/>
 <ItemCard/>
 <ItemCard/>
 <ItemCard/>
   </div>
 </div>
+      {/*Sales section  */}
+<div className="">
+  <div className=" flex justify-between py-9">
+  <span className='fixelMedium text-3xl font-semibold'>Top Sale</span>
+<Button/>
+  </div>
+ {/* New Items */}
+  <div className="flex  xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
+<ItemCard/>
+<ItemCard/>
+<ItemCard/>
+<ItemCard/>
+  </div>
+</div>
+
+      {/*Sales section  */}
+<div className="">
+  <div className=" flex justify-between py-9">
+  <span className='fixelMedium text-3xl font-semibold'>Sale</span>
+<Button/>
+  </div>
+
+ {/* New Items */}
+  <div className="flex  xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
+<ItemCard sale="$900"/>
+<ItemCard sale="$900"/>
+<ItemCard sale="$900"/>
+<ItemCard sale="$900"/>
+  </div>
+</div>
+    
     </section>
+
+   {/* Home section-3 Customer reviews */}
+   <section className='mx-auto  my-7 text-c1  bg-c5 px-7 pb-10 rounded-2xl'>
+   <div className=" flex justify-between py-9 lg:px-[10vw]">
+  <span className=' text-xl'>Customer reviews</span>
+<DarkButton/>
+  </div>
+
+  {/* reviews */}
+  <div className="flex  xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
+<ReviewCars/>
+<ReviewCars/>
+<ReviewCars/>
+<ReviewCars/>
+  </div>
+      
+   </section>
+   </section>
     </>
   )
 }
