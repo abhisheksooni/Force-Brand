@@ -16,8 +16,8 @@ function DarkButton({addCalss,addCalss2}) {
       >
         <p>{"More"}</p>
         <div
-          className={`   rounded-full p-[2px] bg-c1 text-c5  transform ease-linear duration-300
-           rotate${ hovers ? '-45' : '-0' } ${addCalss2}`}
+          className={`   rounded-full p-[2px] bg-c1 text-c5  transform ease-linear ${addCalss2} duration-[250ms]
+           ${ hovers ? 'rotate-45' : 'rotate-0' } `}
         >
           <ArrowUpRight />
         </div>
