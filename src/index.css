@@ -4,23 +4,23 @@
 
 @font-face {
     font-family: fixel;
-    src: url("Font/FixelText-Regular.woff2") format('truetype');
+    src: url("Font/FixelDisplay-Regular.woff2") ;
   }
 @font-face {
     font-family: fixelBlack;
-    src: url("Font/FixelText-Black.woff2") format('truetype');
+    src: url("Font/FixelDisplay-Black.woff2");
   }
 @font-face {
     font-family: fixelBold;
-    src: url("Font/FixelText-Bold.woff2") format('truetype');
+    src: url("Font/FixelDisplay-Bold.woff2") ;
   }
 @font-face {
     font-family: fixelExBold;
-    src: url("Font/FixelText-ExtraBold.woff2") format('truetype');
+    src: url("Font/FixelDisplay-ExtraBold.woff2") ;
   }
 @font-face {
     font-family: fixelMedium;
-    src: url("Font/FixelText-Medium.woff2") format('truetype');
+    src: url("Font/FixelDisplay-Medium.woff2") ;
   }
 
     

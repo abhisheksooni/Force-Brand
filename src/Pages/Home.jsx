@@ -1,6 +1,6 @@
-import React from "react";
-
-// import { ArrowUpRight } from 'lucide-react';
+import React, { useState } from "react";
+import AccordingMenu from '../Components/AccordingMenu'
+import { Plus, Minus } from "lucide-react";
 import {
   ArrowBtn,
   ItemCard,
@@ -8,25 +8,27 @@ import {
   ReviewCars,
   DarkButton,
 } from "../Components/AllExports";
-import { img14 } from "../Images/AllImagesExport"
+import { img14 } from "../Images/AllImagesExport";
 function Home() {
+  const [open, Setopne] = useState(false);
+  console.log(open);
   return (
     <>
       <section className="">
         {/* Home section-1 */}
         <section className="px-5 xl:px-0">
-          <div className="flex gap-3 flex-col md:flex-row justify-center h-full   lg:h-[60vh]">
+          <div className="flex gap-3 flex-col md:flex-row justify-center h-full lg:h-[60vh]">
             {/* Boxs-1 */}
             <div className=" hidden md:inline-block ">
-              <div className="  relative bg-red-500 w-[210px] h-[39%] rounded-2xl m-0 lg:m-0 md:mt-1.5">
+              <div className="  relative bg-red-500 w-[210px] h-[39%] rounded-2xl hover:scale-[.97] cursor-pointer ease-out duration-200 m-0 lg:m-0 md:mt-1.5">
                 <ArrowBtn addClass={"absolute right-3 top-3"} />
               </div>
 
-              <div className=" relative  bg-red-500 w-[210px] h-[39%] rounded-2xl mt-3">
+              <div className=" relative  bg-red-500 w-[210px] h-[39%] rounded-2xl hover:scale-[.97] cursor-pointer ease-out duration-200 mt-3">
                 <ArrowBtn addClass={"absolute right-3 top-3"} />
               </div>
 
-              <div className=" relative  bg-c2 w-[210px] h-[17.4%] rounded-2xl mt-3">
+              <div className=" relative  bg-c2 w-[210px] h-[17.4%] rounded-2xl hover:scale-[.97] cursor-pointer ease-out duration-200 mt-3">
                 <ArrowBtn addClass={"absolute right-3 top-3"} />
                 <span className="text-c1 text-2xl relative left-5 top-[45%]">
                   Sale
@@ -42,13 +44,13 @@ function Home() {
 
             {/* Box-3 */}
             <div className=" w-full lg:max-w-[350px]">
-              <div className="flex items-center justify-between bg-c2 pl-4 p-2 text-c1 rounded-full mb-3">
-                <p className="text-xl">Catalog</p>
+              <div className="flex items-center justify-between bg-c2 pl-4 p-2 text-c1 rounded-full hover:scale-[.97] cursor-pointer ease-out duration-200 mb-3">
+                <p className="text-xl">Catalogue</p>
                 <ArrowBtn />
               </div>
 
               {/* Scroll items lg:h-[85.5%]*/}
-              <div className="p-4 bg-red-500 rounded-2xl h-[60vh] lg:h-[53.5vh] ">
+              <div className="p-4 bg-red-500 rounded-2xl hover:scale-[.98] cursor-pointer ease-out duration-200 h-[60vh]  lg:h-[53.5vh] ">
                 img Scroll
               </div>
             </div>
@@ -140,16 +142,17 @@ function Home() {
         </section>
 
         {/* Home section-4 Frequently */}
-        <section className=" flex flex-wrap justify-center">
-          <div className="">
-          <p className="text-2xl"> Frequently asked questions.</p>
-          <div className=""></div>
-          </div>
-          {/* Right box  */}
-          <div className="max-w-[460px] ">
-    <img src={img14} alt="" className="rounded-3xl" />
+        <section className=" flex flex-wrap justify-center pb-7">
+          <div className=" max-w-[800px] px-11">
+            <p className="text-2xl fixelMedium py-7"> Frequently asked questions.</p>
+            
+          <AccordingMenu/>
           </div>
 
+          {/* Right box  */}
+          <div className="max-w-[460px] ">
+            <img src={img14} alt="" className="rounded-3xl" />
+          </div>
         </section>
       </section>
     </>

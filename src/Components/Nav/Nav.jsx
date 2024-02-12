@@ -30,12 +30,12 @@ function Nav() {
             HOME
           </NavLink>
           <NavLink
-            to={"categories"}
+            to={"catalogue"}
             className={({ isActive }) =>
-              `${isActive ? "text-c5" : "text-c2"}`
+              `${isActive ? "text-c5" : "text-c2"} uppercase`
             }
           >
-            CATEGORIES
+            catalogue
           </NavLink>
         </ul>
 

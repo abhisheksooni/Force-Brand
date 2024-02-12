@@ -5,7 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Root from './Routers/Root.jsx'
-import Categories from './Pages/Categories.jsx'
+import Catalogue from './Pages/Catalogue.jsx'
 import Home from './Pages/Home.jsx'
 
 const router = createBrowserRouter([
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
         element:<Home/>
       },
       {
-        path:"categories",
-        element:<Categories/>
+        path:"catalogue",
+        element:<Catalogue/>
       },
     ]
   },

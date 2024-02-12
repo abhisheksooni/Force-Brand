@@ -5,7 +5,7 @@ function ItemCard({sale}) {
 
   return (
     <div onMouseEnter={()=>Sethover(true)} onMouseLeave={()=>Sethover(false)} className=' cursor-pointer '>
-      <div className={`h-[345px] w-[270px] ease-out duration-200 ${Hover?"scale-[.96]":"scale-100"}`}>
+      <div className={`h-[345px] w-[270px] ease-out duration-200 ${Hover?"scale-[.97]":"scale-100"}`}>
        <img src="" alt=""  className=' w-full h-full rounded-xl bg-slate-400' />
       </div>
         <div className="pl-2">

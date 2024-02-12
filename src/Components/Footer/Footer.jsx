@@ -49,7 +49,7 @@ function Footer() {
       </NavLink>
 
       <button className={` text-c2 bg-c1 rounded-full p-4 `}>
-< ArrowUpFromDot  strokeWidth={2.5}/>
+< ArrowUpFromDot  strokeWidth={2}/>
 </button>
       </div>
     </section>
