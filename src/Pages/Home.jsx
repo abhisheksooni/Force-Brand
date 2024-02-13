@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import AccordingMenu from '../Components/AccordingMenu'
+import AccordingMenu from "../Components/AccordingMenu";
+import {useSelector, useDispatch} from 'react-redux'
+
 import { Plus, Minus } from "lucide-react";
 import {
   ArrowBtn,
@@ -9,7 +11,9 @@ import {
   DarkButton,
 } from "../Components/AllExports";
 import { img14 } from "../Images/AllImagesExport";
+import { NavLink } from "react-router-dom";
 function Home() {
+
   const [open, Setopne] = useState(false);
   console.log(open);
   return (
@@ -44,10 +48,12 @@ function Home() {
 
             {/* Box-3 */}
             <div className=" w-full lg:max-w-[350px]">
-              <div className="flex items-center justify-between bg-c2 pl-4 p-2 text-c1 rounded-full hover:scale-[.97] cursor-pointer ease-out duration-200 mb-3">
-                <p className="text-xl">Catalogue</p>
-                <ArrowBtn />
-              </div>
+              <NavLink to={"catalogue"}>
+                <div className="flex items-center justify-between bg-c2 pl-4 p-2 text-c1 rounded-full hover:scale-[.97] cursor-pointer ease-out duration-200 mb-3">
+                  <p className="text-xl">Catalogue</p>
+                  <ArrowBtn />
+                </div>
+              </NavLink>
 
               {/* Scroll items lg:h-[85.5%]*/}
               <div className="p-4 bg-red-500 rounded-2xl hover:scale-[.98] cursor-pointer ease-out duration-200 h-[60vh]  lg:h-[53.5vh] ">
@@ -80,7 +86,7 @@ function Home() {
               <span className="fixelMedium text-3xl font-semibold">
                 New Items
               </span>
-              <Button />
+              <Button toLink={"catalogue"} />
             </div>
 
             {/* New Items */}
@@ -97,7 +103,7 @@ function Home() {
               <span className="fixelMedium text-3xl font-semibold">
                 Top Sale
               </span>
-              <Button />
+              <Button toLink={"catalogue"} />
             </div>
             {/* New Items */}
             <div className="flex  xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
@@ -112,7 +118,7 @@ function Home() {
           <div className="">
             <div className=" flex justify-between py-9">
               <span className="fixelMedium text-3xl font-semibold">Sale</span>
-              <Button />
+              <Button toLink={"catalogue"} />
             </div>
 
             {/* New Items */}
@@ -129,6 +135,7 @@ function Home() {
         <section className="mx-auto  my-7 text-c1  bg-c5 px-7 pb-10 rounded-2xl">
           <div className=" flex justify-between py-9 lg:px-[10vw]">
             <span className=" text-xl">Customer reviews</span>
+
             <DarkButton />
           </div>
 
@@ -144,9 +151,12 @@ function Home() {
         {/* Home section-4 Frequently */}
         <section className=" flex flex-wrap justify-center pb-7">
           <div className=" max-w-[800px] px-11">
-            <p className="text-2xl fixelMedium py-7"> Frequently asked questions.</p>
-            
-          <AccordingMenu/>
+            <p className="text-2xl fixelMedium py-7">
+              {" "}
+              Frequently asked questions.
+            </p>
+
+            <AccordingMenu />
           </div>
 
           {/* Right box  */}
