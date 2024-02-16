@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ShoppingCart, AlignJustify, X } from "lucide-react";
+import { ShoppingCart, AlignJustify, X ,Plus} from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { CartNav } from "../AllExports";
 import {useSelector, useDispatch} from 'react-redux'
@@ -67,6 +67,9 @@ function Nav() {
             <button >
               <ShoppingCart />
             </button>
+            </NavLink>
+            <NavLink to={"add-product"}>
+            <Plus/>
             </NavLink>
           </div>
         </div>
