@@ -8,24 +8,24 @@ export const data = [
         id:"1",
         img:img1,
         name:"name1",
-        price:"599",
+        price:650,
     },
     {
         id:"2",
         img:img2,
         name:"name12",
-        price:"599",
+        price:750,
     },
     {
         id:"3",
         img:img3,
         name:"name13",
-        price:"599",
+        price:900,
     },
     {
         id:"4",
         img:img4,
         name:"name14",
-        price:"599",
+        price:800,
     }
 ]                   

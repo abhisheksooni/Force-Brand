@@ -6,9 +6,6 @@ import { AddCartItem } from "../Redux/Features/MainSlice";
 function Catalogue() {
 
 const dispatch = useDispatch()
-const [item,setItem] = useState([])
-// onClick={(i.id)=>}
-
 function addItem(i){
 dispatch(AddCartItem(i))
 }

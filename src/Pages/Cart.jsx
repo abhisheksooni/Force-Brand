@@ -1,18 +1,41 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MainButton } from "../Components/AllExports";
 import CartCard from "../Components/CartCard";
 import { useSelector, useDispatch } from "react-redux";
-import { RemoveCartItem } from "../Redux/Features/MainSlice.jsx";
+import { RemoveCartItem,TotalPrice } from "../Redux/Features/MainSlice.jsx";
 function Cart() {
-  const selector = useSelector((state) => state.click.cartItems);
+  const selector = useSelector((state) => state.click);
   const dispatch = useDispatch();
 
   function remove(id) {
     dispatch(RemoveCartItem(id));
     console.log("okokdelit");
   }
+  
+  const [itemsLanth, SetitemsLanth] = useState(Number);
+  const [total, SetTotal] = useState(Number);
+  
+  
+  useEffect(()=>{
+    
+    // total caunt
+      ( ()=>{ SetitemsLanth(selector.length)
+      console.log(itemsLanth)
+     })();
 
-  const [items, SetItems] = useState([]);
+      ( ()=>{ dispatch(TotalPrice());
+      // console.log(TotalPrice)
+     })();
+    //   ( ()=>{ SetTotal(TotalPrice())
+    //  })();
+    
+    // dispatch(MainSlice.actions.TotalPrice());
+    //   console.log(TotalPrice)
+   
+
+
+ },[itemsLanth,remove])
+  
   return (
     <div className=" w-full px-11 max-w-[1700px] mx-auto">
       <h2 className="text-3xl fixelMedium">Basket</h2>
@@ -35,7 +58,7 @@ function Cart() {
         <div className="lg:w-[35%] border-2 rounded-2xl px-5 py-7">
           <p className=" text-2xl fixelBold text-c2 mb-6">Together</p>
           <div className=" flex justify-between py-1.5">
-            <span>3 Prodect in the cart</span>
+            <span>{itemsLanth} Prodect in the cart</span>
             <span className="fixelBold">$5600</span>
           </div>
 
