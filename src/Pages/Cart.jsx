@@ -50,7 +50,7 @@ function Cart() {
   <>  <h2 className="text-3xl fixelMedium">Basket</h2>
    <div className=" flex  flex-col  lg:flex-row py-10">
          {/* cart Basket items */}
-         <div className="  w-full lg:w-[70%]  lg:px-5 py-5 lg:py-8">
+         <div className="  w-full lg:w-[70%] no-scrollbar overflow-y-scroll h-[100vh]  lg:px-5 py-5 lg:py-8">
            {selector.map((i) => (
              <div key={i.id} className="">
                <CartCard
@@ -63,7 +63,7 @@ function Cart() {
            ))}
          </div>
          {/* Cart Together    */}
-         <div className="lg:w-[35%] border-2 rounded-2xl px-5 py-7">
+         <div className="lg:w-[35%] lg:h-[30rem] border-2 rounded-2xl px-5 py-7">
            <p className=" text-2xl fixelBold text-c2 mb-6">Together</p>
            <div className=" flex justify-between py-1.5">
              <span>{itemsLanth} Prodect in the cart</span>
