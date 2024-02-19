@@ -1,16 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ShoppingCart, AlignJustify, X ,Plus} from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { CartNav } from "../AllExports";
 import {useSelector, useDispatch} from 'react-redux'
 
 
+
 function Nav() {
-  const selector = useSelector((state)=> state.click.onClick)
+  const selector = useSelector((state)=> state.click)
   const dispatch = useDispatch()
   const [open, SetOpen] = useState(false);
-  const [cartopen, SetCartOpen] = useState(false);
-  console.log(cartopen);
+  const [TotalItems, SetTotalItems] = useState(Number);
+  
+
+  useEffect(()=>{  
+    (()=>SetTotalItems(selector.length))()   
+    console.log(TotalItems);
+  },[selector,TotalItems])
 
   return (
     <div className="">
@@ -31,6 +37,11 @@ function Nav() {
             <AlignJustify />
           </button>
           <NavLink to={"cart"}>
+          <div className={`  ${TotalItems < 1 ?"hidden":"inline-block"} absolute`}>
+            <div className={` relative -right-4 -top-2 max-w-[18px] min-w-[13px] h-[13px] z-50  rounded-full  text-[8px] font-thin w-full flex items-center justify-center bg-c5 text-c1`}>
+              <span className="m-auto ">{TotalItems}</span>
+            </div>
+              </ div>
           <button className="pl-2">
             <ShoppingCart />
           </button>
@@ -64,7 +75,14 @@ function Nav() {
             `${isActive ? "text-c5" : "text-c2"} uppercase`
           }
             >
-            <button >
+              {/* ${CartShow?"hidden":"inline-block"} */}
+              <div className={`  ${TotalItems < 1 ?"hidden":"inline-block"} absolute`}>
+
+            <div className={` relative -right-4 -top-2 max-w-[18px] min-w-[13px] h-[13px] z-50  rounded-full  text-[8px] font-thin w-full flex items-center justify-center bg-c5 text-c1`}>
+              <span className="m-auto ">{TotalItems}</span>
+            </div>
+              </ div>
+            <button className="" >
               <ShoppingCart />
             </button>
             </NavLink>
