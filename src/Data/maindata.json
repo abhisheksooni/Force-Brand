@@ -1,0 +1,21 @@
+{
+    "Products": [
+        {
+            "id": 1,
+            "title": "zipper suit",
+            "description": "High-quality zipper that will not break after the first use",
+            "price": 1600,
+            "discountPercentage": 12.96,
+            "rating": 4.69,
+            "stock": 94,
+            "brand": "Apple",
+            "category": "Huddy",
+            "size": "M L XXL",
+            "thumbnail":"s",
+            "images":[
+                "s",
+                "s"
+            ]
+        }
+    ]
+}

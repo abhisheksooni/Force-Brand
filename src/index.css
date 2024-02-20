@@ -49,3 +49,22 @@
   } 
 
     
+  /* images bg */
+
+  .menimg{
+    background-image: url("./Images/men.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .womenimg{
+    background-image: url("./Images/women.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .mainimg{
+    background-image: url("./Images/main.jpg");
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
