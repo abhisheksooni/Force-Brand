@@ -20,7 +20,7 @@ dispatch(AddCartItem(i))
       <Link to={`/prodect/${i.id}`}>
 <ItemCard img={i.thumbnail} name={i.title} />
       </Link>
-      <div className=" flex  items-center py-3 justify-between pr-7 ">
+      <div className=" flex  items-center px-2 justify-between ">
         <p className=' text-c5'> <span className='text-c4'>{i.sale? i.sale: ""}</span> ${sale?<del>800</del>:i.price}</p>
           <button onClick={()=>addItem(i)} className='  rounded-full p-2 bg-c2 text-c1'><ShoppingCart size={20}/></button>
         </div>

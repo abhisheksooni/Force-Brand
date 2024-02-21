@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import AccordingMenu from "../Components/AccordingMenu";
 import {useSelector, useDispatch} from 'react-redux'
 import { Plus, Minus } from "lucide-react";
+
 import {
   ArrowBtn,
   ItemCard,
@@ -34,7 +35,7 @@ function Home() {
 
 
   return (
-    <>
+    <>  
       <section className="">
         {/* Home section-1 */}
         <section className="px-5 xl:px-0">
