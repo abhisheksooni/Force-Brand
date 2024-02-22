@@ -1,7 +1,7 @@
 import React from 'react'
 import { X ,Plus ,Minus } from "lucide-react";
 // import img from '../Images/img14.jpg'
-function CartCard({name,price,img,btnf}) {
+function CartCard({name,price,img,btnf,quantity}) {
   return (
     <>
     <div className=" ">
@@ -24,7 +24,7 @@ function CartCard({name,price,img,btnf}) {
           <div className=" flex gap-7 border-2 rounded-full px-3 py-1 ">
 
               <button><Minus/></button>
-              <span className=" fixelMedium">0</span>
+              <span className=" fixelMedium">{quantity?quantity:"0"}</span>
               <button><Plus/></button>
           </div>
 

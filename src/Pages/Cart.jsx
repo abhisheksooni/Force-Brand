@@ -33,13 +33,13 @@ function Cart() {
       return Pprice + Cprice.price;
     }, 0);
 
-   
-
+window.scroll(0,0)
     SetTotal(t);
   }, [itemsLanth, remove]);
-  function Product(){
-    console.log("Product");
-  }
+ 
+
+
+
   return (
     <div className=" w-full px-11 max-w-[1700px] mx-auto">
       {itemsLanth < 1 ? (
@@ -62,13 +62,13 @@ function Cart() {
             <div className="  w-full lg:w-[70%] no-scrollbar overflow-y-scroll h-[100vh]  lg:px-5 py-5 lg:py-3">
               {selector.map((i) => (
                
-                <div key={i.id}  className="">
+                <div key={i.id}>
                   <CartCard
                     img={i.thumbnail}
                     name={i.title}
                     price={i.price}
-                    btnf={() => remove(i.id)}
-                    
+                    btnf={() => remove(i.id)} 
+                    quantity={"1"}                  
                     />
                 </div>
                     

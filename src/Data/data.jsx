@@ -1,7 +1,4 @@
-import img1 from '../Images/item/img1.jpg'
-import img2 from '../Images/item/img2.jpg'
-import img3 from '../Images/item/img3.jpg'
-import img4 from '../Images/item/img4.jpg'
+
 import thumbnail1 from '../Images/Product-Imges/1/1-1.jpg'
 import thumbnail2 from '../Images/Product-Imges/2/2-1.jpg'
 import thumbnail3 from '../Images/Product-Imges/3/3-1.jpg'
@@ -12,8 +9,15 @@ import thumbnail7 from '../Images/Product-Imges/7/7-1.jpg'
 import thumbnail8 from '../Images/Product-Imges/8/8-1.jpg'
 import thumbnail9 from '../Images/Product-Imges/9/9-1.jpg'
 import thumbnail10 from '../Images/Product-Imges/10/11-1.jpg'
-// import thumbnail11 from '../Images/Product-Imges/11/11-1.jpg'
-// import thumbnail12 from '../Images/Product-Imges/12/12-1.jpg'
+import thumbnail13 from '../Images/Product-Imges/13/13-1.jpg'
+import thumbnail14 from '../Images/Product-Imges/14/14-1.jpg'
+import thumbnail15 from '../Images/Product-Imges/15/15-1.jpg'
+import thumbnail16 from '../Images/Product-Imges/16/16-1.jpg'
+import thumbnail17 from '../Images/Product-Imges/17/17-1.jpg'
+import thumbnail18 from '../Images/Product-Imges/18/18-1.jpg'
+import thumbnail19 from '../Images/Product-Imges/19/19-1.jpg'
+import thumbnail20 from '../Images/Product-Imges/20/20-1.jpg'
+import thumbnail21 from '../Images/Product-Imges/21/21-1.jpg'
 
 
 import images12 from '../Images/Product-Imges/1/1-2.jpg'
@@ -60,6 +64,47 @@ import images94 from '../Images/Product-Imges/9/9-4.jpg'
 import images102 from '../Images/Product-Imges/10/11-2.jpg'
 import images103 from '../Images/Product-Imges/10/11-3.jpg'
 import images104 from '../Images/Product-Imges/10/11-4.jpg'
+
+import images132 from '../Images/Product-Imges/13/13-2.jpg'
+import images133 from '../Images/Product-Imges/13/13-3.jpg'
+import images134 from '../Images/Product-Imges/13/13-4.jpg'
+
+import images142 from '../Images/Product-Imges/14/14-2.jpg'
+import images143 from '../Images/Product-Imges/14/14-3.jpg'
+import images144 from '../Images/Product-Imges/14/14-4.jpg'
+
+import images152 from '../Images/Product-Imges/15/15-2.jpg'
+import images153 from '../Images/Product-Imges/15/15-3.jpg'
+import images154 from '../Images/Product-Imges/15/15-4.jpg'
+
+import images162 from '../Images/Product-Imges/16/16-2.jpg'
+import images163 from '../Images/Product-Imges/16/16-3.jpg'
+import images164 from '../Images/Product-Imges/16/16-4.jpg'
+import images165 from '../Images/Product-Imges/16/16-5.jpg'
+
+import images172 from '../Images/Product-Imges/17/17-2.jpg'
+import images173 from '../Images/Product-Imges/17/17-3.jpg'
+import images174 from '../Images/Product-Imges/17/17-4.jpg'
+import images175 from '../Images/Product-Imges/17/17-5.jpg'
+
+import images182 from '../Images/Product-Imges/18/18-2.jpg'
+import images183 from '../Images/Product-Imges/18/18-3.jpg'
+import images184 from '../Images/Product-Imges/18/18-4.jpg'
+import images185 from '../Images/Product-Imges/18/18-5.jpg'
+
+import images192 from '../Images/Product-Imges/19/19-2.jpg'
+import images193 from '../Images/Product-Imges/19/19-3.jpg'
+import images194 from '../Images/Product-Imges/19/19-4.jpg'
+
+
+import images202 from '../Images/Product-Imges/20/20-2.jpg'
+import images203 from '../Images/Product-Imges/20/20-3.jpg'
+import images204 from '../Images/Product-Imges/20/20-4.jpg'
+import images205 from '../Images/Product-Imges/20/20-5.jpg'
+
+import images212 from '../Images/Product-Imges/21/21-2.jpg'
+import images213 from '../Images/Product-Imges/21/21-3.jpg'
+import images214 from '../Images/Product-Imges/21/21-4.jpg'
 
 
 
@@ -255,6 +300,169 @@ images64,
             images104,
         ]
     },
+    {
+        "id": "13",
+        "title": "zipper suit",
+        "description": "High-quality zipper that will not break after the first use",
+        "price": 1600,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "Huddy",
+        "size": ["S","M","L","XL","XXL"],
+        "thumbnail":thumbnail13,
+        "images":[
+            images132,
+            images133,
+            images134,
+        ]
+    },
+    {
+        "id": "14",
+        "title": "zipper suit",
+        "description": "High-quality zipper that will not break after the first use",
+        "price": 1600,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "Huddy",
+        "size": ["S","M","L","XL","XXL"],
+        "thumbnail":thumbnail14,
+        "images":[
+            images142,
+            images143,
+            images144,
+        ]
+    },
+    {
+        "id": "15",
+        "title": "zipper suit",
+        "description": "High-quality zipper that will not break after the first use",
+        "price": 1600,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "Huddy",
+        "size": ["S","M","L","XL","XXL"],
+        "thumbnail":thumbnail15,
+        "images":[
+            images152,
+            images153,
+            images154,
+        ]
+    },
+    {
+        "id": "16",
+        "title": "zipper suit",
+        "description": "High-quality zipper that will not break after the first use",
+        "price": 1600,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "Huddy",
+        "size": ["S","M","L","XL","XXL"],
+        "thumbnail":thumbnail16,
+        "images":[
+            images162,
+            images163,
+            images164,
+        ]
+    },
+    {
+        "id": "17",
+        "title": "zipper suit",
+        "description": "High-quality zipper that will not break after the first use",
+        "price": 1600,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "Huddy",
+        "size": ["S","M","L","XL","XXL"],
+        "thumbnail":thumbnail17,
+        "images":[
+            images172,
+            images173,
+            images174,
+        ]
+    },
+    {
+        "id": "18",
+        "title": "zipper suit",
+        "description": "High-quality zipper that will not break after the first use",
+        "price": 1600,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "Huddy",
+        "size": ["S","M","L","XL","XXL"],
+        "thumbnail":thumbnail18,
+        "images":[
+            images182,
+            images183,
+            images184,
+        ]
+    },
+    {
+        "id": "19",
+        "title": "zipper suit",
+        "description": "High-quality zipper that will not break after the first use",
+        "price": 1600,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "Huddy",
+        "size": ["S","M","L","XL","XXL"],
+        "thumbnail":thumbnail19,
+        "images":[
+            images192,
+            images193,
+            images194,
+        ]
+    },
+    {
+        "id": "20",
+        "title": "zipper suit",
+        "description": "High-quality zipper that will not break after the first use",
+        "price": 1600,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "Huddy",
+        "size": ["S","M","L","XL","XXL"],
+        "thumbnail":thumbnail20,
+        "images":[
+            images202,
+            images203,
+            images204,
+        ]
+    },
+    {
+        "id": "21",
+        "title": "zipper suit",
+        "description": "High-quality zipper that will not break after the first use",
+        "price": 1600,
+        "discountPercentage": 12.96,
+        "rating": 4.69,
+        "stock": 94,
+        "brand": "Apple",
+        "category": "Huddy",
+        "size": ["S","M","L","XL","XXL"],
+        "thumbnail":thumbnail21,
+        "images":[
+            images212,
+            images213,
+            images214,
+        ]
+    },
+    
     
   
 ]                   

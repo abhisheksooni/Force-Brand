@@ -11,7 +11,7 @@ import {
   DarkButton,
 } from "../Components/AllExports";
 import { img14,men,women } from "../Images/AllImagesExport";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { data } from "../Data/data";
 
 // 
@@ -25,13 +25,30 @@ function Home() {
   const [open, Setopne] = useState(false);
   console.log(open);
 
-  useEffect(()=>{
-    // let a = data.find(({id})=>id == 7)
+  let a = data.filter(item =>{
+    const data1821 = parseInt(item.id); 
+    return data1821 >=12 && data1821<=18;
+  } )
 
-    const a = ()=>{}
+  const NewItem = data.filter(item => {
+    const id = parseInt(item.id);
+    return id >= 15 && id <= 20;
+    
+});
 
-  },[])
+  const sallItem = data.filter(item => {
+    const id = parseInt(item.id);
+    return id >= 15 && id <= 18;
+    
+});
 
+  const TopItem = data.filter(item => {
+    const id = parseInt(item.id);
+    return id >= 18 && id <= 21;
+    
+});
+  
+ 
 
 
   return (
@@ -104,7 +121,7 @@ function Home() {
         </section>
         {/* Home section-2 Items cards */}
         <section className=" mx-auto max-w-[1150px] px-5 xl:px-0">
-          {/*Top Sales section  */}
+          {/*New Sales section  */}
           <div className="">
             <div className=" flex justify-between py-9">
               <span className="fixelMedium text-3xl font-semibold">
@@ -115,13 +132,17 @@ function Home() {
 
             {/* New Items */}
             <div className="flex  xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
-              <ItemCard />
-              <ItemCard />
-              <ItemCard />
-              <ItemCard />
+              {
+                NewItem.map((i)=>(                 
+                  <Link  to={`/prodect/${i.id}`}>
+                  <ItemCard img={i.thumbnail} />                                
+                    </Link>                              
+                ))
+              }
+             
             </div>
           </div>
-          {/*Sales section  */}
+          {/* Top Sales section  */}
           <div className="">
             <div className=" flex justify-between py-9">
               <span className="fixelMedium text-3xl font-semibold">
@@ -129,12 +150,15 @@ function Home() {
               </span>
               <Button toLink={"catalogue"} />
             </div>
-            {/* New Items */}
+            {/* Top Items */}
             <div className="flex  xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
-              <ItemCard />
-              <ItemCard />
-              <ItemCard />
-              <ItemCard />
+             {
+                TopItem.map((i)=>(                 
+                  <Link  to={`/prodect/${i.id}`}>
+                <ItemCard img={i.thumbnail} />                                
+                  </Link>                             
+            ))
+             }
             </div>
           </div>
 
@@ -145,12 +169,19 @@ function Home() {
               <Button toLink={"catalogue"} />
             </div>
 
-            {/* New Items */}
+            {/* Items */}
             <div className="flex  xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
+            {
+                sallItem.map((i)=>(  
+                  <Link  to={`/prodect/${i.id}`}>
+                <ItemCard img={i.thumbnail} />                                
+                  </Link>               
+            ))
+             }
+              {/* <ItemCard sale="$900" />
               <ItemCard sale="$900" />
               <ItemCard sale="$900" />
-              <ItemCard sale="$900" />
-              <ItemCard sale="$900" />
+              <ItemCard sale="$900" /> */}
             </div>
           </div>
         </section>

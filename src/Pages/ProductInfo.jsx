@@ -23,7 +23,10 @@ function ProductInfo() {
         console.log("add Click");
     }
 
+useEffect(()=>{
 
+ window.scroll(0,0)
+},[])
     return (
         <>
         <section className='max-w-[1800px]'>
@@ -43,7 +46,7 @@ function ProductInfo() {
                     </div>
                 </div>
                 {/* Product Details max-w-[800px] w-full*/}
-                <div className="flex flex-col w-full my-5 px-2 max-w-[600px]">
+                <div className="flex flex-col w-full my-5 px-2 max-h-[500px] max-w-[600px]">
                     <div className=" flex justify-between  w-full">
                     <p className='text-3xl fixelMedium py-1.5 '>{singalData.title}</p>
                     <button className='  flex items-center justify-center p-2 hover:text-c4 text-text1  '><Heart /></button>                  
@@ -62,15 +65,15 @@ function ProductInfo() {
                         ))
                     } 
                         </div>
-                        <p className='mb-2 mt-5'>Number</p>
+                        {/* <p className='mb-2 mt-5'>Number</p>
                     <div className=" flex  max-w-[130px] justify-center w-full gap-7 border-2 rounded-full px-3 py-1 mb-5">
                         <button><Minus /></button>
                         <span className=" fixelMedium">0</span>
                         <button><Plus /></button>
-                    </div>
+                    </div> */}
 
                         {/* Add to cart and Like btn */}
-                    <div className=" flex gap-4 items-center max-w-[450px] w-full">
+                    <div className=" flex gap-4 items-center max-w-[450px] mt-auto w-full lg:mb-5">
 
                         <button onClick={AddCart} className="rounded-full w-[160px] p-1.5  bg-c2 hover:bg-c5 flex items-center">
                             <div className=" bg-c1 pl-0.5 p-1 flex justify-center items-center rounded-full h-[35px] w-[35px]">
@@ -78,6 +81,8 @@ function ProductInfo() {
                             </div>
                             <p className='text-c1 pl-2.5'>Add to cart</p>
                         </button>
+
+                        <button className='rounded-full w-[160px] h-[47px]   bg-c2 hover:bg-c5 flex items-center text-c1 justify-center'> <p className='text-c1  '>Buy</p></button>
                         
                     </div>
 
