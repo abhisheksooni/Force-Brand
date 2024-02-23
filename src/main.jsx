@@ -14,6 +14,7 @@ import {Provider} from 'react-redux'
 import Cart from './Pages/Cart.jsx'
 import AddProduct from './Pages/AddProduct.jsx'
 import ProductInfo from './Pages/ProductInfo.jsx'
+import Order from './Pages/Order.jsx'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path:"cart",
         element:<Cart/>
+      },
+      {
+        path:"order",
+        element:<Order/>
       },
       {
         path:"add-product",

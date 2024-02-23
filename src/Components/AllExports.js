@@ -5,6 +5,7 @@ import ItemCard from './ItemCard'
 import ReviewCars from './ReviewCars'
 import CartNav from './Nav/CartNav'
 import MainButton from './Buttons/MainButton'
+import Input from './Input'
 
 export{
     ArrowBtn,
@@ -14,4 +15,5 @@ export{
     DarkButton,
     CartNav,
     MainButton,
+    Input,
 }

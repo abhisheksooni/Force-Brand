@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useDispatch} from 'react-redux'
 import { AddCartItem } from "../Redux/Features/MainSlice";
 import ReactStars from "react-stars";
@@ -82,7 +82,10 @@ useEffect(()=>{
                             <p className='text-c1 pl-2.5'>Add to cart</p>
                         </button>
 
-                        <button className='rounded-full w-[160px] h-[47px]   bg-c2 hover:bg-c5 flex items-center text-c1 justify-center'> <p className='text-c1  '>Buy</p></button>
+                    {/* <Link to={"/order"}>
+                    <button className='rounded-full w-[160px] h-[47px]   bg-c2 hover:bg-c5 flex items-center text-c1 justify-center'> <p className='text-c1  '>Buy</p></button>
+                    </Link> */}
+                        
                         
                     </div>
 

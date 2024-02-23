@@ -3,7 +3,7 @@ import { MainButton } from "../Components/AllExports";
 import CartCard from "../Components/CartCard";
 import { useSelector, useDispatch } from "react-redux";
 import MainSlice, { RemoveCartItem } from "../Redux/Features/MainSlice.jsx";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 function Cart() {
   const selector = useSelector((state) => state.click);
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ function Cart() {
 
   function remove(id) {
     dispatch(RemoveCartItem(id));
-    console.log("okokdelit");
+    
   }
 
   const totalfn = () => {
@@ -100,14 +100,19 @@ window.scroll(0,0)
               </div>
               {/* Buttons */}
               <div className=" px-12 *:">
+                
                 <MainButton
+                to={"/order"}
                   text={"Continue"}
                   addCss={"my-4 bg-c5 text-c1 hover:bg-text1  hover:bg-c2"}
-                />
-                <MainButton
+                  />
+                  
+                
+                <MainButton to={"/catalogue"}
                   text={"Back to catalogue"}
                   addCss={" hover:bg-c2 hover:text-c1 text-c2"}
-                />
+                  />
+                 
               </div>
             </div>
           </div>
