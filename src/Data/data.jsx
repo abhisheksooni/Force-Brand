@@ -114,6 +114,7 @@ export const data = [
     {
         "id": '1',
         "title": "zipper suit",
+        "gender": "male",
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -121,18 +122,20 @@ export const data = [
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail1,
-        "images":[
-           images12,           
-          images13,           
-           images14,           
-           images15,           
-    ]
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail1,
+        "images": [
+            images12,
+            images13,
+            images14,
+            images15,
+        ]
     },
     {
         "id": '2',
         "title": "zipper suit",
+        "gender": "female",
+
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -140,18 +143,19 @@ export const data = [
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail2,
-        "images":[
-            images22,           
-            images23,           
-             images24,
-              
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail2,
+        "images": [
+            images22,
+            images23,
+            images24,
+
         ]
     },
     {
         "id": "3",
         "title": "zipper suit",
+        "gender": "male",
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -159,19 +163,20 @@ export const data = [
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail3,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail3,
+        "images": [
             images32,
-images33,
-images34,
-images35,
-images36,
+            images33,
+            images34,
+            images35,
+            images36,
         ]
     },
     {
         "id": "4",
         "title": "zipper suit",
+        "gender": "male",
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -179,9 +184,9 @@ images36,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail4,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail4,
+        "images": [
             images42,
             images43,
             images44,
@@ -192,6 +197,8 @@ images36,
     {
         "id": "5",
         "title": "zipper suit",
+        "gender": "female",
+
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -199,17 +206,19 @@ images36,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail5,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail5,
+        "images": [
             images52,
             images53,
-            images54,           
+            images54,
         ]
     },
     {
         "id": "6",
         "title": "zipper suit",
+        "gender": "female",
+
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -217,18 +226,19 @@ images36,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail6,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail6,
+        "images": [
             images62,
-images63,
-images64,
+            images63,
+            images64,
 
         ]
     },
     {
         "id": "7",
         "title": "zipper suit",
+        "gender": "male",
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -236,13 +246,13 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail7,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail7,
+        "images": [
             images72,
             images73,
             images74,
-            
+
         ]
     },
     {
@@ -255,18 +265,19 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail8,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail8,
+        "images": [
             images82,
             images83,
             images84,
-           
+
         ]
     },
     {
         "id": "9",
         "title": "zipper suit",
+        "gender": "male",
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -274,9 +285,10 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail9,
-        "images":[
+
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail9,
+        "images": [
             images92,
             images93,
             images94,
@@ -285,6 +297,7 @@ images64,
     {
         "id": "10",
         "title": "zipper suit",
+        "gender": "male",
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -292,9 +305,9 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail10,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail10,
+        "images": [
             images102,
             images103,
             images104,
@@ -303,6 +316,8 @@ images64,
     {
         "id": "13",
         "title": "zipper suit",
+        "gender": "female",
+
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -310,9 +325,9 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail13,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail13,
+        "images": [
             images132,
             images133,
             images134,
@@ -328,9 +343,9 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail14,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail14,
+        "images": [
             images142,
             images143,
             images144,
@@ -339,6 +354,8 @@ images64,
     {
         "id": "15",
         "title": "zipper suit",
+        "gender": "female",
+
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -346,9 +363,9 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail15,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail15,
+        "images": [
             images152,
             images153,
             images154,
@@ -364,9 +381,9 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail16,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail16,
+        "images": [
             images162,
             images163,
             images164,
@@ -375,6 +392,7 @@ images64,
     {
         "id": "17",
         "title": "zipper suit",
+        "gender": "female",
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -382,9 +400,9 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail17,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail17,
+        "images": [
             images172,
             images173,
             images174,
@@ -393,6 +411,7 @@ images64,
     {
         "id": "18",
         "title": "zipper suit",
+        "gender": "female",
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -400,9 +419,9 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail18,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail18,
+        "images": [
             images182,
             images183,
             images184,
@@ -411,6 +430,8 @@ images64,
     {
         "id": "19",
         "title": "zipper suit",
+        "gender": "female",
+
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -418,9 +439,9 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail19,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail19,
+        "images": [
             images192,
             images193,
             images194,
@@ -429,6 +450,8 @@ images64,
     {
         "id": "20",
         "title": "zipper suit",
+        "gender": "female",
+
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -436,9 +459,9 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail20,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail20,
+        "images": [
             images202,
             images203,
             images204,
@@ -447,6 +470,7 @@ images64,
     {
         "id": "21",
         "title": "zipper suit",
+        "gender": "female",
         "description": "High-quality zipper that will not break after the first use",
         "price": 1600,
         "discountPercentage": 12.96,
@@ -454,15 +478,15 @@ images64,
         "stock": 94,
         "brand": "Apple",
         "category": "Huddy",
-        "size": ["S","M","L","XL","XXL"],
-        "thumbnail":thumbnail21,
-        "images":[
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "thumbnail": thumbnail21,
+        "images": [
             images212,
             images213,
             images214,
         ]
     },
-    
-    
-  
+
+
+
 ]                   
