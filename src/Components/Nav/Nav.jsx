@@ -107,11 +107,11 @@ function Nav() {
         >
           <X size={25} />
         </button>
-        <div className=" flex flex-col pt-12 *:my-1 items-center">
-          <NavLink to={"/"} className={` text-c1 uppercase`}>
+        <div className=" flex flex-col pt-12 *:my-2 items-center">
+          <NavLink to={"/"} className={` text-c1 text-xl uppercase`}>
             HOME
           </NavLink>
-          <NavLink to={"catalogue"} className={` text-c1 uppercase`}>
+          <NavLink to={"catalogue"} className={` text-xl text-c1 uppercase`}>
             catalogue
           </NavLink>
         </div>
