@@ -2,14 +2,6 @@ import React, { useEffect, useState } from "react";
 import AccordingMenu from "../Components/AccordingMenu";
 import {useSelector, useDispatch} from 'react-redux'
 import { Plus, Minus } from "lucide-react";
-
-import {
-  ArrowBtn,
-  ItemCard,
-  Button,
-  ReviewCars,
-  DarkButton,
-} from "../Components/AllExports";
 import { img14,men,women } from "../Images/AllImagesExport";
 import { Link, NavLink } from "react-router-dom";
 import { data } from "../Data/data";
@@ -20,6 +12,9 @@ import images122 from '../Images/Product-Imges/12/12-2.jpg'
 import images123 from '../Images/Product-Imges/12/12-3.jpg'
 import images124 from '../Images/Product-Imges/12/12-4.jpg'
 import images125 from '../Images/Product-Imges/12/12-5.jpg'
+
+import {  ArrowBtn,  ItemCard, Button, ReviewCars,DarkButton,} from "../Components/AllExports";
+
 function Home() {
 
   const [open, Setopne] = useState(false);
@@ -59,20 +54,29 @@ function Home() {
           <div className="flex gap-3 flex-col md:flex-row justify-center h-full lg:h-[60vh]">
             {/* Boxs-1 */}
             <div className=" hidden md:inline-block ">
-              <div className="  relative womenimg  w-[210px] h-[39%] rounded-2xl hover:scale-[.97] cursor-pointer ease-out duration-200 m-0 lg:m-0 md:mt-1.5">
+              <NavLink to={"catalogue"} >
+
+              <div  className="  relative womenimg  w-[210px] h-[39%] rounded-2xl hover:scale-[.97] cursor-pointer ease-out duration-200 m-0 lg:m-0 md:mt-1.5">
+                <ArrowBtn addClass={"absolute right-3 top-3"} />
+              </div > 
+              </NavLink> 
+
+              <NavLink to={"catalogue"} >
+                
+              <div  className=" relative menimg  w-[210px] h-[39%] rounded-2xl hover:scale-[.97] cursor-pointer ease-out duration-200 mt-3">
                 <ArrowBtn addClass={"absolute right-3 top-3"} />
               </div>
+                </NavLink>
 
-              <div className=" relative menimg  w-[210px] h-[39%] rounded-2xl hover:scale-[.97] cursor-pointer ease-out duration-200 mt-3">
-                <ArrowBtn addClass={"absolute right-3 top-3"} />
-              </div>
-
-              <div className=" relative  bg-c2 w-[210px] h-[17.4%] rounded-2xl hover:scale-[.97] cursor-pointer ease-out duration-200 mt-3">
+                <NavLink to={"catalogue"} >
+                
+              <div  className=" relative  bg-c2 w-[210px] h-[17.4%] rounded-2xl hover:scale-[.97] cursor-pointer ease-out duration-200 mt-3">
                 <ArrowBtn addClass={"absolute right-3 top-3"} />
                 <span className="text-c1 text-2xl relative left-5 top-[45%]">
                   Sale
                 </span>
               </div>
+                </NavLink>
             </div>
             {/* Box-2 */}
             <div className="w-[500px] rounded-2xl mx-3 p-3 mainimg bg-red-400 hidden lg:inline-block">
@@ -91,13 +95,13 @@ function Home() {
               </NavLink>
 
               {/* Scroll items lg:h-[85.5%]*/}
-              <div className="m-0.5 flex snap-x overflow-x-auto no-scrollbar *:snap-center *:object-cover gap-3 rounded-2xl hover:scale-[.98] cursor-pointer ease-out duration-200 h-[60vh]  lg:h-[53.5vh] ">
+              <div className="m-0.5 flex snap-x overflow-x-auto no-scrollbar snap-mandatory *:snap-center *:object-cover gap-3 rounded-2xl hover:scale-[.98] cursor-pointer ease-out duration-200 h-[60vh]  lg:h-[53.5vh] ">
                 
-                  <img src={images125} className="  rounded-2xl " alt="" />
-                  <img src={images124} className=" rounded-2xl" alt="" />
-                  <img src={images123} className=" rounded-2xl" alt="" />
-                  <img src={images122} className=" rounded-2xl" alt="" />
-                  <img src={images121} className=" rounded-2xl" alt="" />
+                  <img src={images125} className=" snap-always rounded-2xl " alt="" />
+                  <img src={images124} className=" snap-always rounded-2xl" alt="" />
+                  <img src={images123} className=" snap-always rounded-2xl" alt="" />
+                  <img src={images122} className=" snap-always rounded-2xl" alt="" />
+                  <img src={images121} className=" snap-always rounded-2xl" alt="" />
                 
               </div>
             </div>

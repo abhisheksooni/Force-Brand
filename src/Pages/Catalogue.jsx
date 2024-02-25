@@ -6,7 +6,7 @@ import { AddCartItem } from "../Redux/Features/MainSlice";
 import { ShoppingCart } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 import { isAction } from '@reduxjs/toolkit';
-function Catalogue({sale}) {
+function Catalogue({sale,}) {
 
 const dispatch = useDispatch()
 function addItem(i){
@@ -31,6 +31,7 @@ const d = async ()=>{
     } finally{
       SetLoading(false)
     }
+    linkBtnSend?"":""
 }
 d()
   window.scroll(0,0)
@@ -41,7 +42,6 @@ function female (){
 Setstylef(true)
 Setstylem(false)
 Setstyleall(false)
-
   const female =   Data.filter((female)=> female.gender == "female")
   Setfilterdata(female)
     }
@@ -57,7 +57,7 @@ function all (){
   Setstyleall(true)
   Setstylem(false)
   Setstylef(false)
-  // const male = Data.filter((mail)=>mail.gender == "male")
+
   Setfilterdata(Data)
     }
   return (

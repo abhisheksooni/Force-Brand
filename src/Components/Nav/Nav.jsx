@@ -86,9 +86,9 @@ function Nav() {
               <ShoppingCart />
             </button>
             </NavLink>
-            <NavLink to={"add-product"}>
+            {/* <NavLink to={"add-product"}>
             <Plus/>
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       </div>
