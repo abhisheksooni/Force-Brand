@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { ShoppingCart } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
-function ItemCard({sale,name,price,img,btnf}) {
+function ItemCard({sale,name,price,img,btnf,gender}) {
   const [Hover,Sethover] = useState(false)
 
   return (
@@ -13,7 +13,7 @@ function ItemCard({sale,name,price,img,btnf}) {
        <img src={img} alt=""  className=' w-full h-full rounded-xl bg-slate-400' />
       </div>
         <div className="pl-2">
-        <p className='pt-1.5 fixelMedium text-xl text-c5 '>{name}</p>
+        <p className='pt-1.5 fixelMedium text-xl text-c5 '>{name} <span className='text-base text-text1'>{gender}</span></p>
 
         {/* <div className=" flex  relative z-40 items-center py-3 justify-between pr-7 ">
         <p className=' text-c5'> <span className='text-c4'>{sale? sale: ""}</span> ${sale?<del>800</del>:price}</p>

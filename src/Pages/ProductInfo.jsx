@@ -48,7 +48,7 @@ useEffect(()=>{
                 {/* Product Details max-w-[800px] w-full*/}
                 <div className="flex flex-col w-full my-5 px-2 max-h-[500px] max-w-[600px]">
                     <div className=" flex justify-between  w-full">
-                    <p className='text-3xl fixelMedium py-1.5 '>{singalData.title}</p>
+                    <p className='text-3xl fixelMedium py-1.5 '>{singalData.title} <p className='text-sm text-text1'>{singalData.gender}</p></p>
                     <button className='  flex items-center justify-center p-2 hover:text-c4 text-text1  '><Heart /></button>                  
                     </div>
                     <div className="flex items-center gap-2">

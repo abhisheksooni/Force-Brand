@@ -63,10 +63,10 @@ useEffect(()=>{
                     </div>
                     <div className=" w-full ">
                       <div className="flex justify-between pb-2 pt-1 gap-3 text-[14px] md:text-base">
-                        <p className=''>{i.title}</p>
+                        <p className=''>{i.title} <p className='text-sm text-text1'>{i.gender.toUpperCase()}</p> </p>
                         <button onClick={()=>remove(i.id)}> X </button>
                       </div>
-                      <p className='text-[17px] md:text-base'>{"Rs." + i.price}</p>
+                      <p className='text-[17px] md:text-base'>{"Rs. " + i.price}</p>
                     </div>
                   </div>
                   <div className="h-[2px] my-2 bg-text1 w-[95%] mx-auto"></div>
@@ -81,12 +81,12 @@ useEffect(()=>{
               <p className=' text-xl my-2.5 mx-2'>Order amount</p>
               <div className=" flex justify-between">
                 <p>{itemsLanth} Products in the cart</p>
-                <p>Price {total}</p>
+                <p>Price Rs. {total}</p>
               </div>
               <div className="h-[2px] my-2 bg-text1 w-full"></div>
               <div className=" flex justify-between">
                 <p>To be paid</p>
-                <p>Total Price {total}</p>
+                <p>Total Price Rs. {total}</p>
               </div>
 
               {/* Button */}

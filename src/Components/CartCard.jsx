@@ -1,7 +1,7 @@
 import React from 'react'
 import { X ,Plus ,Minus } from "lucide-react";
 // import img from '../Images/img14.jpg'
-function CartCard({name,price,img,btnf,quantity}) {
+function CartCard({name,price,img,btnf,quantity,gender,category}) {
   return (
     <>
     <div className=" ">
@@ -12,12 +12,12 @@ function CartCard({name,price,img,btnf,quantity}) {
           </div>
           <div className=" flex flex-col w-full pl-6">
             <div className=" flex fixelMedium text-c2 lg:w-[100%] justify-between">
-              <p className=" text-xl ">{name}</p>
+              <p className=" text-xl ">{name} <p className='text-sm text-text1'>{gender.toUpperCase()}</p></p>
               <button className="text-c5" onClick={btnf}>
                 <X size={32}/>
               </button>
             </div>
-            <p className="text-sm fixelMedium text-text1 py-3">Item Category name</p>
+            <p className="text-sm fixelMedium text-text1 py-3">{category}</p>
 
             <div className=" flex justify-between gap-5 md:gap-0  flex-wrap lg:w-[100%]">
 
@@ -29,7 +29,7 @@ function CartCard({name,price,img,btnf,quantity}) {
           </div>
 
               {/* <p>Add function ++ -- </p> */}
-              <p className="fixelMedium text-xl">{price}</p>
+              <p className="fixelMedium text-xl">Rs. {price}</p>
             </div>
           </div>
           </div>
