@@ -87,7 +87,7 @@ function Cart() {
           <h2 className="text-3xl lg:pl-[4.5rem] fixelMedium">Basket</h2>
           <div className=" flex  flex-col  lg:flex-row py-4">
             {/* cart Basket items */}
-            <div className="  w-full lg:w-[70%] no-scrollbar overflow-y-scroll h-[100vh]  lg:px-5 py-5 lg:py-3">
+            <div className="  w-full lg:w-[70%] no-scrollbar overflow-y-scroll md:h-[100vh]  lg:px-5 py-5 lg:py-3">
               {selector.map((i) => (
 
                 <div key={i.id}>
