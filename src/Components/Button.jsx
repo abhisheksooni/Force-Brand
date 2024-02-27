@@ -15,7 +15,7 @@ function Button({ addCalss, addCalss2, toLink }) {
         >
           <p>{"More"}</p>
           <div
-            className={`   rounded-full p-[2px] bg-c5 text-c1  transform ease-linear duration-[250ms] ${addCalss2}
+            className={`   rounded-full md:p-[2px] bg-c5 text-c1  transform ease-linear duration-[250ms] ${addCalss2}
           ${hovers ? "rotate-45" : "rotate-0"} `}
           >
             <ArrowUpRight />
