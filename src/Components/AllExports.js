@@ -6,6 +6,8 @@ import ReviewCars from './ReviewCars'
 import CartNav from './Nav/CartNav'
 import MainButton from './Buttons/MainButton'
 import Input from './Input'
+import Loading from './Alert/Loading'
+import According_Menu from './According_Menu'
 
 export{
     ArrowBtn,
@@ -16,4 +18,6 @@ export{
     CartNav,
     MainButton,
     Input,
+    Loading,
+    According_Menu,
 }

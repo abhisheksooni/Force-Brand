@@ -3,7 +3,7 @@ import { ShoppingCart, AlignJustify, X ,Plus} from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { CartNav } from "../AllExports";
 import {useSelector, useDispatch} from 'react-redux'
-
+import '../../index.css'
 
 
 function Nav() {
@@ -33,9 +33,9 @@ function Nav() {
 
         {/* Mobile menu */}
         <div className="lg:hidden ">
-          <button onClick={() => SetOpen(true)}>
+          {/* <button onClick={() => SetOpen(true)}>
             <AlignJustify />
-          </button>
+          </button> */}
           <NavLink to={"cart"}>
           <div className={`  ${TotalItems < 1 ?"hidden":"inline-block"} absolute`}>
             <div className={` relative -right-4 -top-2 max-w-[18px] min-w-[13px] h-[13px] z-50  rounded-full  text-[8px] font-thin w-full flex items-center justify-center bg-c5 text-c1`}>
@@ -93,11 +93,11 @@ function Nav() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu min-w-[320px] */}
 
       <div
         onClick={() => SetOpen(false)}
-        className={`bg-c5 relative  text-c1 z-50 h-[100vh] w-full min-w-[320px] max-w-[784px] py-6 top-0 ${
+        className={`Navbar bg-c5 relative  text-c1 z-50 h-[100vh]   max-w-[784px] py-6 top-0 ${
           open ? "inline-block" : "hidden"
         } `}
       >
@@ -107,11 +107,11 @@ function Nav() {
         >
           <X size={25} />
         </button>
-        <div className=" flex flex-col pt-12 *:my-2 items-center">
-          <NavLink to={"/"} className={` text-c1 text-xl uppercase`}>
+        <div className=" flex flex-col pt-12 h-[900%] justify-center *:my-4 items-center text-4xl uppercase ">
+          <NavLink to={"/"} className={` text-c1  `}>
             HOME
           </NavLink>
-          <NavLink to={"catalogue"} className={` text-xl text-c1 uppercase`}>
+          <NavLink to={"catalogue"} className={`  text-c1`}>
             catalogue
           </NavLink>
         </div>
