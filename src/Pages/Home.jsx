@@ -43,6 +43,8 @@ function Home() {
 
   });
 
+  window.scroll(0,0)
+
 
 
 

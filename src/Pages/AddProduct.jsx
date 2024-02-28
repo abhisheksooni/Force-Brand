@@ -27,7 +27,8 @@ function AddProduct() {
        console.log(state);
     }
 
-    
+    window.scroll(0,0)
+
   return (
     <section className=' h-[100vh]'>
         <form action="" on >

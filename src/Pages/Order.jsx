@@ -24,6 +24,7 @@ useEffect(()=>{
 
   SetTotal(totalPrice)
 },[selector])
+window.scroll(0,0)
 
   return (
     <>
