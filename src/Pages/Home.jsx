@@ -162,8 +162,8 @@ function Home() {
               </span>
               <Button toLink={"catalogue"} />
             </div>
-            {/* Top Items */}
-            <div className="flex snap-x *:snap-always snap-mandatory *:snap-cente xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
+            {/* Top Sales */}
+            <div className="flex snap-x snap-mandatory *:snap-always  *:snap-cente xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
               {
                 TopItem.map((i) => (
                   <Link to={`/prodect/${i.id}`}>
@@ -181,19 +181,21 @@ function Home() {
               <Button toLink={"catalogue"} />
             </div>
 
-            {/* Items */}
-            <div className="flex snap-x *:snap-always *:snap-cente snap-mandatory xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
+            {/* Sales Items */}
+            <div className="flex snap-x Top Sales *:snap-always *:snap-cente x xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
               {
                 sallItem.map((i) => (
                   <Link to={`/prodect/${i.id}`}>
-                    <ItemCard img={i.thumbnail} />
+                    <ItemCard img={i.thumbnail}  />
+                  <div className=" flex  relative z-40 items-center py-3 justify-between pr-7 ">
+
+                  <p className=' text-c5'>  <span className='text-c4'>{i.discountPrice? i.discountPrice: ""} </span> ${i.discountPrice?<del>{i.price}</del>:i.price}</p> <p className="text-c5"> {i.title} </p>
+                    {/* <button className='  rounded-full p-2 bg-c2 text-c1'><ShoppingCart size={20}/></button> */}
+                  </div>
                   </Link>
                 ))
               }
-              {/* <ItemCard sale="$900" />
-              <ItemCard sale="$900" />
-              <ItemCard sale="$900" />
-              <ItemCard sale="$900" /> */}
+            
             </div>
           </div>
         </section>
@@ -208,10 +210,10 @@ function Home() {
 
           {/* reviews */}
           <div className="flex snap-x *:snap-always *:snap-cente snap-mandatory xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
-            <ReviewCars />
-            <ReviewCars />
-            <ReviewCars />
-            <ReviewCars />
+            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-person-with-long-hair_23-2149436197.jpg?size=626&ext=jpg'} />
+            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg'} />
+            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671140.jpg?size=626&ext=jpg'} />
+            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671124.jpg?size=626&ext=jpg&ga=GA1.1.1970010351.1709309137&semt=sph'} />
           </div>
         </section>
 

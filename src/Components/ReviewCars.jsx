@@ -2,7 +2,7 @@ import { data } from "autoprefixer";
 import React, { useState } from "react";
 import ReactStars from "react-stars";
 
-function ReviewCars() {
+function ReviewCars({srcImg,Name}) {
   const [Hover, Sethover] = useState(false);
 
   return (
@@ -21,8 +21,8 @@ function ReviewCars() {
           </div>
          <p className="px-2 py-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam debitis eligendi tempora doloremque sapiente aspernatur commodi unde illum, ab molestias omnis, obcaecati maxime. Consequuntur aspernatur nostrum impedit dolores?</p>
           <div className=" flex items-center">
-            <img src="" alt=""  className="w-12 h-12 bg-red-500 rounded-full"/>
-        <p className="ml-4 ">Name Smith</p>
+            <img src={srcImg} alt=""  className="w-12 h-12 bg-red-500 rounded-full"/>
+        <p className="ml-4 ">{Name}</p>
           </div>
         </div>
       </div>
