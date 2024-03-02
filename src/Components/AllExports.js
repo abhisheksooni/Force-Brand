@@ -8,6 +8,7 @@ import MainButton from './Buttons/MainButton'
 import Input from './Input'
 import Loading from './Alert/Loading'
 import According_Menu from './According_Menu'
+import Done from './Alert/Done'
 
 export{
     ArrowBtn,
@@ -20,4 +21,6 @@ export{
     Input,
     Loading,
     According_Menu,
+    // alert
+    Done,
 }
