@@ -210,10 +210,10 @@ function Home() {
 
           {/* reviews */}
           <div className="flex snap-x *:snap-always *:snap-cente snap-mandatory xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
-            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-person-with-long-hair_23-2149436197.jpg?size=626&ext=jpg'} />
-            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg'} />
-            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671140.jpg?size=626&ext=jpg'} />
-            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671124.jpg?size=626&ext=jpg&ga=GA1.1.1970010351.1709309137&semt=sph'} />
+            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-person-with-long-hair_23-2149436197.jpg?size=626&ext=jpg'} Name={"Rohan"} />
+            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg'} Name={"Shiv"}/>
+            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671140.jpg?size=626&ext=jpg'}  Name={"Rina"}/>
+            <ReviewCars srcImg={'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671124.jpg?size=626&ext=jpg&ga=GA1.1.1970010351.1709309137&semt=sph'} Name={"Shivam"} />
           </div>
         </section>
 
