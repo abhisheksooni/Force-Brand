@@ -4,8 +4,7 @@ import '../../index.css'
 
 function Done() {
     return (
-        <>
-           
+        <>  
             <div className="  done flex items-center justify-center gap-1 h-0">
                 <div className=" done ease-in-out bg-c5 bg-opacity-50  w-[50%]  md:w-full max-w-[300px] rounded-full flex items-center flex-col  backdrop-blur-sm ">
                     <div className=' font-semibold  py-2  text-c1 flex items-center justify-center gap-2'> 

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import ItemCard from '../Components/ItemCard'
-import { Loading } from '../Components/AllExports'
+import { Done, Loading } from '../Components/AllExports'
 import { data } from '../Data/data'
 import { useDispatch} from 'react-redux'
-import { AddCartItem } from "../Redux/Features/MainSlice";
-import { ShoppingCart } from 'lucide-react';
+import { AddCartItem, ChangeIcon } from "../Redux/Features/MainSlice";
+import { ShoppingCart, X, Check } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
-import { isAction } from '@reduxjs/toolkit';
+import { Alert } from '@material-tailwind/react'
+
 function Catalogue({sale,}) {
 
 const dispatch = useDispatch()
@@ -20,8 +21,10 @@ const [filerdata,Setfilterdata] = useState(data)
 const [stylef,Setstylef] = useState(false)
 const [stylem,Setstylem] = useState(false)
 const [styleall,Setstyleall] = useState(true)
+const [donew,Setdone] = useState(false)
 
-
+const [itemStates, setItemStates] = useState([]);
+// Data,data,filerdata,styleall,stylem,stylef,donew
 useEffect(()=>{
 const d = async ()=>{
   SetLoading(true)
@@ -37,11 +40,9 @@ const d = async ()=>{
 }
 d()
   window.scroll(0,0)
+ 
 
-
-
-
-},[Data,data,filerdata,styleall,stylem,stylef])
+},[])
 
 function female (){
 Setstylef(true)
@@ -66,9 +67,27 @@ function all (){
   Setfilterdata(Data)
     }
 
+    function done (ItemId){
+      console.log("done");
+      // dispatch(ChangeIcon({ItemId}))
+      Setdone(true)
+      }
+    
+      if(donew == true){
+        setTimeout(()=>{
+          Setdone(false)
+          console.log("donefp");
+        },2000)
+        }
+
 const show = (
   data?(
     <>
+  {/* Alert done */}
+    {donew?<Done/>:""}    
+   
+
+   
    <div className=" flex justify-evenly flex-wrap gap-5 my-5">
    <p className=' text-3xl'>Catalogue</p>
      <div className=" flex border-2 border-c5 p-0.5 rounded-full">
@@ -95,7 +114,12 @@ const show = (
                    </Link>
                    <div className=" flex  items-center px-2 justify-between ">
                      <p className=' text-c5'> <span className='text-c4'>{i.sale? i.sale: ""}</span> Rs. {sale?<del>800</del>:i.price}</p>
-                       <button onClick={()=>addItem(i)} className='  rounded-full p-2 bg-c2 text-c1'><ShoppingCart size={20}/></button>
+                       <button onClick={()=>{addItem(i)
+                        Setdone(true) }} className='  rounded-full p-2 bg-c2 text-c1 '>
+                          {/* { itemStates[i.id]? <Check size={20} /> :<ShoppingCart size={20}/> }  */}
+                          {/* { donew? <Check size={20} /> :<ShoppingCart size={20}/> }  */}
+                          <ShoppingCart size={20}/>
+                          </button>
                      </div>
                  </div>
        ))}
@@ -105,11 +129,6 @@ const show = (
 <p className='text-9xl'>Loding........</p>
 </div>)
 )
-
-    
-      
-       
-
 
   return (
     <>

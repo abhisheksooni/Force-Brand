@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useDispatch} from 'react-redux'
 import { AddCartItem } from "../Redux/Features/MainSlice";
+import { Done, Loading } from '../Components/AllExports'
 import ReactStars from "react-stars";
 import { X, Plus, Minus, BaggageClaim, Heart } from "lucide-react";
+
+
 import {
 
     ItemCard,
@@ -12,7 +15,7 @@ import {
   } from "../Components/AllExports";
 import { data } from '../Data/data'
 function ProductInfo() {
-
+    const [donew,Setdone] = useState(false)
     const dispatch = useDispatch()
     const { id } = useParams()
     const singalData = data.find(i => i.id === id)
@@ -23,15 +26,27 @@ function ProductInfo() {
         console.log("add Click");
     }
 
+    
+
 useEffect(()=>{
 
+   
  window.scroll(0,0)
 },[])
+
+if(donew == true){
+    setTimeout(()=>{
+      Setdone(false)
+      console.log("donefp");
+    },2000)
+    }
+
     return (
         <>
         <section className='max-w-[1800px]'>
+         {/* Alert done */}
+         {donew?<Done/>:""}    
 
-       
             <div className=' flex justify-center w-full  p-5  flex-col lg:flex-row sm:gap-5'>
                 {/* Images Showing */}
                 <div className="my-5 lg:max-w-[25rem] mx-auto lg:mx-0">                   
@@ -75,7 +90,11 @@ useEffect(()=>{
                         {/* Add to cart and Like btn */}
                     <div className=" flex gap-4 items-center max-w-[450px] mt-auto w-full lg:mb-5">
 
-                        <button onClick={AddCart} className="rounded-full w-[160px] p-1.5  bg-c2 hover:bg-c5 flex items-center">
+                        <button onClick={()=>{
+                            AddCart
+                            Setdone(true)
+                        }} 
+                        className="rounded-full w-[160px] p-1.5  bg-c2 hover:bg-c5 flex items-center">
                             <div className=" bg-c1 pl-0.5 p-1 flex justify-center items-center rounded-full h-[35px] w-[35px]">
                                 <BaggageClaim />
                             </div>

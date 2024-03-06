@@ -125,14 +125,11 @@ animation: donetimer 2s forwards cubic-bezier(0,0,0,0);
 }
 
 .done{
-  /* sticky top-3  z-20  backdrop-blur-sm*/
   position: sticky;
   top: 50px;
   z-index:20;
-  
 animation:  done 0.3s ;
 }
-
 @keyframes done {
   0%{
     opacity: 0;

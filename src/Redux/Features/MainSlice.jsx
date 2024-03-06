@@ -18,16 +18,22 @@ export const MainSlice = createSlice({
             AddCartItem:(state,action)=>{
                 state.push(action.payload)
             },
+            // AddCartItem:(state,action)=>{
+            //     state[action.payload.itemId] = true
+            // },
             RemoveCartItem:(state,action)=>{
                 return state.filter((i)=>i.id !== action.payload)
                               
             },
             TotalItem:(state,action)=>{
               return  state.length
+            },
+            ChangeIcon:(state,action)=>{
+                state[action.payload.itemId] = true
             }
     }
 })
 
-export const {TotalItem, ClickBtn,AddCartItem,RemoveCartItem, } = MainSlice.actions
+export const {TotalItem, ClickBtn,AddCartItem,RemoveCartItem,ChangeIcon } = MainSlice.actions
 
 export default MainSlice.reducer

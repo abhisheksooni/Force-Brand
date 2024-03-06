@@ -20,7 +20,7 @@ function MainButton({
     <NavLink to={to ? to : ""} className={`w-full max-w-[300px] `}>
       <button
         className={`
-        uppercase  border-2 border-c5 rounded-full py-2 text-center duration-300 ease-in-out w-full 
+        uppercase  border-2 border-c5 rounded-full py-2 text-center duration-300 ease-in-out w-full max-w-[300px] 
         ${addCss} 
         `}
       >

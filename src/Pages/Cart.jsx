@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { MainButton } from "../Components/AllExports";
+import { MainButton,Done } from "../Components/AllExports";
 import CartCard from "../Components/CartCard";
 import { useSelector, useDispatch } from "react-redux";
 import MainSlice, { RemoveCartItem } from "../Redux/Features/MainSlice.jsx";
-import { Link, NavLink } from "react-router-dom";
+
 function Cart() {
   const selector = useSelector((state) => state.click);
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ function Cart() {
   const [discount, SetDiscunt] = useState(0);
   const [totalCost, SetTotalCost] = useState(0);
   const [shipingCost, SetShipingCost] = useState();
-
+  const [donew,Setdone] = useState(false)
   function remove(id) {
     dispatch(RemoveCartItem(id));
 
@@ -66,7 +66,12 @@ function Cart() {
 
   window.scroll(0, 0)
 
-  console.log(discount);
+  if(donew == true){
+    setTimeout(()=>{
+      Setdone(false)
+      console.log("donefp");
+    },2000)
+    }
 
   return (
     <div className=" w-full px-11 max-w-[1700px] mx-auto">
@@ -83,7 +88,9 @@ function Cart() {
         </div>
       ) : (
         <>
-          {" "}
+        {/* Alert */}
+          {donew?<Done/>:""}  
+
           <h2 className="text-3xl lg:pl-[4.5rem] fixelMedium">Basket</h2>
           <div className=" flex  flex-col  lg:flex-row py-4">
             {/* cart Basket items */}
@@ -97,7 +104,10 @@ function Cart() {
                     gender={i.gender}
                     category={i.category}
                     price={i.price}
-                    btnf={() => remove(i.id)}
+                    btnf={() => {
+                      remove(i.id)
+                      Setdone(true)
+                    }}
                     quantity={"1"}
                   />
                 </div>
@@ -117,7 +127,7 @@ function Cart() {
 
                     <div className=" flex justify-between py-1.5">
                       <span>Discount</span>
-                      <span className="fixelBold">- {discount}</span>
+                      <span className="fixelBold">- {discount+" %"}</span>
                     </div>
 
                     <div className=" flex justify-between py-1.5">
@@ -137,7 +147,7 @@ function Cart() {
 
 
               {/* Buttons */}
-              <div className=" px-12 *:">
+              <div className=" xl:px-12 w-full">
 
                 <MainButton
                   to={"/order"}

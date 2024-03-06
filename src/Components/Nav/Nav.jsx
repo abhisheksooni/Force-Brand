@@ -18,7 +18,10 @@ function Nav() {
     console.log(TotalItems);
   },[selector,TotalItems])
 
+ 
+
   return (
+    <>
     <div className="">
       <div
         className={` ${
@@ -120,6 +123,9 @@ function Nav() {
 
       
     </div>
+         {/* Alert done */}
+         {/* {donew?<Done/>:""}     */}
+    </>
   );
 }
 
