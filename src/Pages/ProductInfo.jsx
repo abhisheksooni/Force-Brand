@@ -26,11 +26,8 @@ function ProductInfo() {
         console.log("add Click");
     }
 
-    
-
 useEffect(()=>{
 
-   
  window.scroll(0,0)
 },[])
 
@@ -91,7 +88,7 @@ if(donew == true){
                     <div className=" flex gap-4 items-center max-w-[450px] mt-auto w-full lg:mb-5">
 
                         <button onClick={()=>{
-                            AddCart
+                            AddCart()
                             Setdone(true)
                         }} 
                         className="rounded-full w-[160px] p-1.5  bg-c2 hover:bg-c5 flex items-center">
