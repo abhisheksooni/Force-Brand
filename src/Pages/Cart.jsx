@@ -64,7 +64,7 @@ function Cart() {
     SetTotal(totalPrice);
   }, [itemsLanth, remove, shipingCost]);
 
-  window.scroll(0, 0)
+  window.scroll({top:0,behavior:"smooth"})
 
   if(donew == true){
     setTimeout(()=>{

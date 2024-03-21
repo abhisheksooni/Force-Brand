@@ -39,9 +39,7 @@ const d = async ()=>{
     } 
 }
 d()
-  window.scroll(0,0)
- 
-
+  window.scroll({top:0,behavior:'smooth'})
 },[])
 
 function female (){
@@ -108,7 +106,7 @@ const show = (
     <div className="flex flex-wrap justify-center mx-auto gap-6">
 
    { filerdata.map((i)=>(
-         <div  key={i.id} >
+         <div  key={i.id} className='mb-0.5' >
                    <Link to={`/prodect/${i.id}`}>
              <ItemCard img={i.thumbnail} name={i.title} gender={i.gender} />
                    </Link>

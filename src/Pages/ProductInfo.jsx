@@ -28,8 +28,13 @@ function ProductInfo() {
 
 useEffect(()=>{
 
- window.scroll(0,0)
 },[])
+window.scroll({top:0,behavior:'smooth'})
+
+const items = data.filter(item =>{
+    const id = parseInt(item.id)
+    return id>=16 && id<20
+})
 
 if(donew == true){
     setTimeout(()=>{
@@ -108,19 +113,24 @@ if(donew == true){
                 </div>
             </div>
              {/*Sales section  */}
-          <div className=" mx-0 lg:mx-auto my-5 max-w-[1300px]">
+          <div className=" mx-0 lg:mx-auto my-5 max-w-[1300px] px-5 xl:px-0">
             <div className=" flex justify-between py-9">
               <span className="fixelMedium text-3xl font-semibold">
                 Top Sale
               </span>
-              <Button toLink={"catalogue"} />
+              <Button toLink={"/catalogue"} />
             </div>
             {/* New Items */}
-            <div className="flex  xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
-              <ItemCard />
-              <ItemCard />
-              <ItemCard />
-              <ItemCard />
+            <div className="flex snap-x  snap-mandatory  *:snap-always *:snap-center xl:justify-center gap-5 overflow-x-scroll no-scrollbar">
+                {
+                  items.map((i)=>(
+                    <Link to={`/prodect/${i.id}`}>
+                    <ItemCard img={i.thumbnail} />
+                  </Link>
+                  ))  
+                    
+                }
+             
             </div>
           </div>
             </section>

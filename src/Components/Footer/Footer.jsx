@@ -48,7 +48,7 @@ function Footer() {
         <span className="fixelMedium text-text1">Brand</span>
       </NavLink>
 
-      <button onClick={()=>window.scroll(0,0)} className={` text-c2 bg-c1 rounded-full p-4 `}>
+      <button onClick={()=>window.scroll({top:0,behavior:'smooth'})} className={` text-c2 bg-c1 rounded-full p-4 `}>
 < ArrowUpFromDot  strokeWidth={2}/>
 </button>
       </div>

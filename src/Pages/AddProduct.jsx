@@ -27,7 +27,7 @@ function AddProduct() {
        console.log(state);
     }
 
-    window.scroll(0,0)
+    window.scroll({top:0,behavior:'smooth'})
 
   return (
     <section className=' h-[100vh]'>

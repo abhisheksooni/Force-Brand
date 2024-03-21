@@ -123,8 +123,7 @@ function Nav() {
 
       
     </div>
-         {/* Alert done */}
-         {/* {donew?<Done/>:""}     */}
+
     </>
   );
 }
