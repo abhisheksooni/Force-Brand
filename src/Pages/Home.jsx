@@ -235,7 +235,7 @@ function Home() {
           </div>
 
           {/* Right box  */}
-          <div className="max-w-[460px] w-full">
+          <div className="max-w-[460px] w-full px-4 md:px-0">
             <img src={img14} alt="" className="rounded-3xl" />
           </div>
         </section>

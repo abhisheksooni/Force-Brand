@@ -6,8 +6,6 @@ import { useDispatch} from 'react-redux'
 import { AddCartItem, ChangeIcon } from "../Redux/Features/MainSlice";
 import { ShoppingCart, X, Check } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
-import { Alert } from '@material-tailwind/react'
-
 function Catalogue({sale,}) {
 
 const dispatch = useDispatch()

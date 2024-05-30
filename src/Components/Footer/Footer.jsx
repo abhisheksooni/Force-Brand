@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import ArrowBtn from '../ArrowBtn';
 function Footer() {
   return (
-    <section className=' bg-c5 p-3  rounded-b-2xl '>
+    <section className=' bg-c5 p-3  rounded-t-2xl '>
       <div className="flex justify-evenly gap-5 flex-col md:flex-row pl-6 md:pl-3">
       <ul className=' text-text1 hover:*:text-c1 *:flex *:items-center *:gap-2 *:my-3 cursor-pointer'>
         <p className='text-c1 text-xl'>Contacts</p>
