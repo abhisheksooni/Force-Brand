@@ -1,4 +1,4 @@
-# MERN E-commerce Project
+# MERN Clothing Shop Project
 
 # [Demo Video link](https://drive.google.com/file/d/1ItCbIEcMXO_rSYIeOC7rkNDGR4ajE1BX/view)
 
